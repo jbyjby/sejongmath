@@ -1,0 +1,48 @@
+.hero {
+  background-image: url("image/main.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0px;
+}
+.hero h1 {
+  font-size: 9rem;
+  color: black;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.btn {
+  font-size: 5rem;
+  padding-top: 40px; /* 수정된 부분 */
+  padding-bottom: 40px; /* 수정된 부분 */
+  width: calc(33.33% - 20px);
+  height: 100%;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  box-shadow: 5px 5px 10px #888888;
+}
+
+.btn-primary span,
+.btn-secondary span,
+.btn-success span,
+.btn-danger span,
+.btn-warning span,
+.btn-info span {
+  font-size: 10px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: #232222;
+  color: #919191;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  left: 0; /* 수정된 부분 */
+}
+.container {
+  margin-top: 3rem; /* 수정된 부분 */
+}
