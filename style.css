@@ -1,48 +1,98 @@
-.hero {
+:root {
+  --text-color: rgb(6, 5, 5);
+  --background-color: lightgray;
+  --bodybackground-color: white;
+  --accent-color: black;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 8px 12px;
+  margin-bottom: 0;
+}
+body {
+  margin: 0;
+  background-color: var(--bodybackground-color);
+}
+.navbar__logo i {
+  color: var(--accent-color);
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.navbar__menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+.navbar__menu li {
+  padding: 10px 30px;
+}
+.navbar__icons {
+  list-style: none;
+  display: flex;
+  color: var(--icons-color);
+  margin: 0;
+  padding-left: 0;
+}
+
+.navbar__icons li {
+  padding: 8px 12px;
+  margin: 0;
+}
+.hero-image {
   background-image: url("image/main.png");
-  background-size: cover;
+  height: 90vh;
+  margin-top: 0;
+}
+.mask {
+  background-color: rgba(76, 76, 76, 0.7);
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-text {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0px;
+  color: white;
 }
-.hero h1 {
-  font-size: 9rem;
-  color: black;
-  text-shadow: 2px 2px 4px #000000;
+#start-button,
+#pdf-button {
+  background-color: transparent;
+  border-color: white;
+  border-radius: 10px;
+  font-size: 2rem;
+  border-width: 5px;
+  color: white;
+  padding: 10px;
+  margin: 20px;
 }
-
-.btn {
-  font-size: 5rem;
-  padding-top: 40px; /* 수정된 부분 */
-  padding-bottom: 40px; /* 수정된 부분 */
-  width: calc(33.33% - 20px);
-  height: 100%;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  box-shadow: 5px 5px 10px #888888;
+.text-white {
+  text-align: center;
 }
-
-.btn-primary span,
-.btn-secondary span,
-.btn-success span,
-.btn-danger span,
-.btn-warning span,
-.btn-info span {
-  font-size: 10px;
+h3 {
+  font-size: 2rem;
 }
 
+h1 {
+  font-size: 4rem;
+}
 footer {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   text-align: center;
   background-color: #232222;
   color: #919191;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
   width: 100%;
-  left: 0; /* 수정된 부분 */
-}
-.container {
-  margin-top: 3rem; /* 수정된 부분 */
+  left: 0;
 }
